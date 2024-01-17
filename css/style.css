@@ -1,0 +1,138 @@
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+#nasalogo{
+    width: 15%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:.5%;
+    left:7%;
+}
+
+header{    
+    background-color: transparent;
+    position: absolute;
+    top: 7.5%; 
+    left: 25%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    background-color:transparent;
+    
+}
+
+.container1{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    
+}
+.images_main{
+    max-width: 100%;
+    height: auto;   
+    vertical-align: top; /*remove for black line*/
+}
+.link_page{        
+    position: absolute;
+    bottom: 3rem;
+    left: 2em;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.link_page.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+.shuttle_name{    
+    position: absolute;
+    bottom: 10.5rem;
+    left: 2.85rem;   
+
+}
+h2{
+    padding: 0;
+    margin: 0;
+    margin-top: .3rem;    
+}
+h3{
+    padding: 0;
+    margin: 0;
+}
+
+.info_div{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;    
+    margin-top: .3rem;
+    width: fit-content;
+    background-image: linear-gradient(to bottom,transparent 50%,#f7f7f7 50%);
+    background-size: 100% 200%;
+    transition: background-position 0.3s ease-in-out;   
+}
+
+.info_div:hover{
+    background-position: 0 100%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.moreinfo{
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease-out;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0rem 1rem;
+}
+
+
+.moreinfo:hover{
+    color: black; /* Change this to the desired color */
+  }
+
+nav {    
+    padding: 1rem; /* Adjust padding as needed */
+    display: inline-block;
+}
+
+.header-list{
+    margin: 0;
+}
+.animated-link {
+    position: relative;    
+    font-size: 1.5rem;
+    overflow: hidden;
+    display: inline-block;
+    transition: transform 0.1s ease-in-out;
+}
+.animated-link:hover {
+    transform: scale(1.15); /* Adjust to a larger font size on hover */
+}
+
+
+
